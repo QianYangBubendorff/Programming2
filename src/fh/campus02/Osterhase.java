@@ -1,20 +1,40 @@
 package fh.campus02;
 
 public class Osterhase {
+    private static int haeschenZaehler = 1;
     private String name;
     private int anzahlVersteckteEier;
+    private int haeschenNummer;
+    private HasenReligion peronenlicherGlaube;
 
-    public Osterhase(String name, int anzahlVersteckteEier){
+    public Osterhase(String name, int anzahlVersteckteEier, HasenReligion glaube){
         this.name = name;
         this.anzahlVersteckteEier = anzahlVersteckteEier;
+        haeschenNummer = haeschenZaehler ++;//jeder osterhase soll ein eigene eindeutige nummer haben
+        //alternativer zugriff oder von außen (wenn nicht privat wäre)
+        //Osterhase.haeschenZaeler
+        peronenlicherGlaube = glaube;
     }
 
     public Osterhase(String name){
         this.name = name;
         this.anzahlVersteckteEier = 0;
+        haeschenNummer = haeschenZaehler ++;
+        peronenlicherGlaube = HasenReligion.LANGE_OHREN_ZEUGEN;
     }
+
     public String getName() {
         return name;
+    }
+
+    public int getHaeschenNummer() {
+        return haeschenNummer;
+    }
+
+    @Override
+    public String toString() {
+        return  name + " vesteckte " + anzahlVersteckteEier +
+                "  Eier und glaub an: "+ peronenlicherGlaube;
     }
 
     public void setName(String name) {

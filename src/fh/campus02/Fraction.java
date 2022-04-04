@@ -1,14 +1,26 @@
 package fh.campus02;
 
 public class Fraction {
+    private static int fractionCount = 0;
     private int numerator;
     private int denominator;
 //    constructor for Fraction class
     public Fraction(int numerator, int denominator){
         this.numerator = numerator;
         this.denominator = denominator;
+        ++fractionCount;
     }
-//    getter for Fraction class
+
+    public static int getFractionCount() {
+        return fractionCount;
+    }
+
+    @Override
+    public String toString() {
+        return  numerator + " /"+ denominator;
+    }
+
+    //    getter for Fraction class
     public int getNumerator() {
         return numerator;
     }

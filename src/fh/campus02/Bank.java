@@ -20,6 +20,10 @@ public class Bank {
         for(Account a:arr){
             System.out.println(a.getBalance());
         }
+        for(Account a:arr){
+            System.out.println(a);
+        }
+
 
 
     }

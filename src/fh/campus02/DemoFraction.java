@@ -11,6 +11,8 @@ public class DemoFraction {
         multi1.print();
       Fraction add= fraction.add(b2);
       add.print();
+        System.out.println(b2);
+        System.out.println(Fraction.getFractionCount());
 
     }
 }
