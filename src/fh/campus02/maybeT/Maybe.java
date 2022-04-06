@@ -1,4 +1,4 @@
-package fh.campus02;
+package fh.campus02.maybeT;
 
 public class Maybe<T> {
     private T data;

@@ -1,4 +1,4 @@
-package fh.campus02;
+package fh.campus02.fraction;
 
 public class DemoFraction {
     public static void main(String[] args) {

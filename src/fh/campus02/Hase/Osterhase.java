@@ -1,4 +1,4 @@
-package fh.campus02;
+package fh.campus02.Hase;
 
 public class Osterhase {
     private static int haeschenZaehler = 1;

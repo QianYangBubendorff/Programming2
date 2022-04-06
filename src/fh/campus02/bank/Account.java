@@ -1,4 +1,4 @@
-package fh.campus02;
+package fh.campus02.bank;
 
 public class Account {
     private String owner;

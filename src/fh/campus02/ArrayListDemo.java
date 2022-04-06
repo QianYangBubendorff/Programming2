@@ -1,5 +1,8 @@
 package fh.campus02;
 
+import fh.campus02.Hase.HasenReligion;
+import fh.campus02.Hase.Osterhase;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 

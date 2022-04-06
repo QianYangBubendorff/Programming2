@@ -1,4 +1,6 @@
-package fh.campus02;
+package fh.campus02.door;
+
+import fh.campus02.Hase.Himmelrichtung;
 
 public class Tuer {
     private double breite;

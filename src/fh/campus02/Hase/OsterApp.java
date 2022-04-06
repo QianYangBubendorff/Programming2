@@ -1,4 +1,4 @@
-package fh.campus02;
+package fh.campus02.Hase;
 
 public class OsterApp {
     public static void main(String[] args) {

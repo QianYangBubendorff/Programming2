@@ -1,4 +1,6 @@
-package fh.campus02;
+package fh.campus02.maybeT;
+
+import fh.campus02.bank.Account;
 
 public class MaybeTest {
     public static void main(String[] args) {

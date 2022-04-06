@@ -1,4 +1,4 @@
-package fh.campus02;
+package fh.campus02.employee;
 
 public class Employee {
     private int empNumber;
