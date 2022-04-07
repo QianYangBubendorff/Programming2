@@ -1,5 +1,7 @@
 package fh.campus02.employee;
 
+import java.util.Objects;
+
 public class Employee {
     private int empNumber;
     private String name;
@@ -11,6 +13,12 @@ public class Employee {
         this.name = name;
         this.salary = salary;
         this.department = department;
+    }
+    public boolean compareDepartment(Employee e) {
+        if (department.equals(e.department)) {
+            return true;
+        }
+        return false;
     }
 
     public int getEmpNumber() {
@@ -45,5 +53,18 @@ public class Employee {
                 ", salary=" + salary +
                 ", department='" + department + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return empNumber == employee.empNumber && Objects.equals(department, employee.department);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(empNumber, department);
     }
 }

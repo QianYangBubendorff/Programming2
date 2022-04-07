@@ -17,5 +17,7 @@ public class DemoEmp {
         System.out.println(manager1.findByDepartment("Sales"));
         System.out.println(manager1.findByMaxSalary());
 
+        System.out.println(employee1.compareDepartment(employee2));
+
     }
 }
