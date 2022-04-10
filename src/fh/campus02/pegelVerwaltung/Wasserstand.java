@@ -7,7 +7,7 @@ public class Wasserstand {
     private String ort;
     private double messWert;
     private double messWertFuerAlarmierung;
-    private int zeitPunkt = 1649153147;
+    private int zeitPunkt;
 
     public int getId() {
         return id;
