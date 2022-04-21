@@ -1,6 +1,8 @@
 package fh.campus02.hash;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.ArrayList;
 
 public class SerialKillers {
 //    unique serial killer names
@@ -33,5 +35,20 @@ public class SerialKillers {
         for(String s: serialNickNames){
             System.out.println(s);
         }
+
+//        Hashmap to store all the victims
+
+        HashMap<String, ArrayList<String>> opfer = new HashMap<>();
+        for(String crazyAmerican: americanSerialKiller){
+            ArrayList<String> o= new ArrayList<>();
+            o.add("Opfer 1");
+            o.add("Opfer 2");
+            o.add("Opfer 3");
+            opfer.put(crazyAmerican,o);
+        }
+
+        ArrayList<String> opfi = opfer.get("Tred Bundy");
+
+        opfi.add("opfer 4");
     }
 }
