@@ -3,6 +3,8 @@ package fh.campus02.hash;
 import fh.campus02.bank.Account;
 
 import java.util.HashSet;
+import java.util.Hashtable;
+import java.util.HashMap;
 
 public class Hashproblem {
     public static void main(String[] args) {
@@ -19,6 +21,11 @@ public class Hashproblem {
 
         System.out.println(s1.hashCode());
         System.out.println(s2.hashCode());
+
+        HashMap<String,Integer> map1=new HashMap<>();
+        System.out.println(map1.put("Graz",1));
+        System.out.println(map1.put("Graz",0));
+        System.out.println(map1.put("Graz",0));
     }
 
 }
