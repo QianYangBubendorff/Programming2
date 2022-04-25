@@ -6,14 +6,6 @@ import java.util.Map;
 public class Blackjack {
     private Map<Player,Integer> players=new HashMap<>();
 
-    public Map<Player, Integer> getPlayers() {
-        return players;
-    }
-
-    public void setPlayers(Map<Player, Integer> players) {
-        this.players = players;
-    }
-
     boolean add(Player player){
 //        int result= players.put(player,0);
 //        if(result==0){
@@ -31,13 +23,13 @@ public class Blackjack {
         if(players.containsKey(player)){
             players.replace(player,players.get(player)+cardValue);
             return true;
-        }else return false;
+        }return false;
     }
 
     Integer getValue(Player player){
         if(players.containsKey(player)){
             return players.get(player);
-        }else return null;
+        }return null;
     }
 
     Player getWinner(){
