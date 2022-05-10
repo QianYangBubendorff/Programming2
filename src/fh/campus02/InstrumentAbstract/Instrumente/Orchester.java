@@ -1,4 +1,4 @@
-package fh.campus02.Instrumente;
+package fh.campus02.InstrumentAbstract.Instrumente;
 
 import java.util.ArrayList;
 

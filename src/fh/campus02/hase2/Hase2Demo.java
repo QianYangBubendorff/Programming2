@@ -38,7 +38,7 @@ public class Hase2Demo {
         h = o1;// can only have access of the hase methods
         h.hoppeln();
 
-//        down casting: assigning a general type to a more specialized type(this only works if this general reference already refers to a specialized object instance
+//        down casting: assigning a general type to a more specialized type(this only works if this general reference already refers to a specific object instance
 
 //            w = (Weihnachtshase) h3;    // this gives us a classcastexception
 
@@ -47,7 +47,13 @@ public class Hase2Demo {
           wh = (Weihnachtshase) h;
           wh.hoppeln();
 
-
+//          interface example
+        ArrayList<GoesToParty> partyPeople = new ArrayList<>();
+        partyPeople.add(wh);
+        partyPeople.add(o1);
+        for(GoesToParty p: partyPeople){
+            p.party("alcoholfree champagne", "unicorn cake");
+        }
 
 
 

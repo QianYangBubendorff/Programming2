@@ -1,7 +1,7 @@
 package fh.campus02.Instrumente;
 
 public class Instrument {
-    public int lautstärke;
+    protected int lautstärke;
 
     public Instrument(int lautstärke) {
         this.lautstärke = lautstärke;
@@ -10,5 +10,13 @@ public class Instrument {
     public int play(){
         return lautstärke;
 
+    }
+
+    public int getLautstärke() {
+        return lautstärke;
+    }
+
+    public void setLautstärke(int lautstärke) {
+        this.lautstärke = lautstärke;
     }
 }

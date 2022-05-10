@@ -1,6 +1,6 @@
 package fh.campus02.inheritances;
 
-public class Dog {
+public class Dog implements Comparable<Dog>{
     public  String name;
     public String eyeColor;
     public  int weight;
@@ -40,4 +40,21 @@ public class Dog {
         }
         return text;
     }
+//sort with 2 criteria: name and weight
+    @Override
+    public int compareTo(Dog o) {
+        int ergFirst = this.name.compareTo(o.name);
+        if (ergFirst != 0) {
+            return ergFirst;
+        }
+
+        if (this.weight > o.weight) {
+                return 1;
+            }
+
+        if (this.weight < o.weight) {
+                return -1;
+            }
+            return 0;
+        }
 }
